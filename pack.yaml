@@ -1,6 +1,6 @@
 ---
-ref: makeen-sql
-name: makeen-sql
+ref: makeen_sql
+name: makeen_sql
 description: StackStorm Integration Pack for SQL Databases (Postgres, MySQL, etc)
 keywords:
   - Postgres
