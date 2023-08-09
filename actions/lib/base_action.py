@@ -116,8 +116,13 @@ class BaseAction(Action):
 
         # Update Driver with a connector
         default_driver = DEFAULT_KNOWN_DRIVER_CONNECTORS.get(connection['drivername'], None)
+        
+        print(default_driver)
+        
         if default_driver:
             connection['drivername'] = default_driver
+            
+        print(default_driver)
 
         # Check if query is in de connection
         if 'query' not in connection:
@@ -125,6 +130,8 @@ class BaseAction(Action):
 
         # Format the connection string
         database_connection_string = URL(**connection)
+        
+        print(database_connection_string)
 
         self.engine = sqlalchemy.create_engine(database_connection_string, echo=False)
         self.meta = sqlalchemy.MetaData()
