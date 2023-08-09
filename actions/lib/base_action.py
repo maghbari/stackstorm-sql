@@ -129,7 +129,8 @@ class BaseAction(Action):
             connection['query'] = ()
 
         # Format the connection string
-        database_connection_string = URL(**connection)
+        # database_connection_string = URL(**connection)
+        database_connection_string = 'postgresql://makeen:db@23*@mgtappsrv.makeen.ye:5432/makeen?sslmode=disable;
         
         print(database_connection_string)
 
