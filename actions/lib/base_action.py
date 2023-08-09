@@ -14,7 +14,7 @@ CONFIG_CONNECTION_KEYS = [('host', False, ""),
                           ('drivername', True, "")]
 
 DEFAULT_KNOWN_DRIVER_CONNECTORS = {
-    'postgresql': 'postgresql+psycopg2',
+    'postgresql': 'postgresql',
     'mysql': 'mysql+pymysql',
     'oracle': 'oracle+cx_oracle',
     'mssql': 'mssql+pymssql',
