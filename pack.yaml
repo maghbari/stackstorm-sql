@@ -1,13 +1,13 @@
 ---
-ref: sql
-name: sql
+ref: makeen-sql
+name: makeen-sql
 description: StackStorm Integration Pack for SQL Databases (Postgres, MySQL, etc)
 keywords:
   - Postgres
   - MySQL
   - MsSQL
-version: 1.1.1
+version: 1.1.2
 author: Encore Technologies
-email: code@encore.tech
+email: alaghbri.mohammed@gmail.com
 python_versions:
   - "3"
