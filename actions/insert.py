@@ -26,9 +26,7 @@ class SQLInsertAction(BaseAction):
         with self.db_connection(kwargs_dict) as conn:
             # Get the Table to insert data into
             sql_table = sqlalchemy.Table(insert_table,
-                                        self.meta,
-                                        autoload=True,
-                                        autoload_with=self.engine)
+                                        self.meta)
 
             # Execute the insert query
             conn.execute(sql_table.insert(),  # pylint: disable-msg=no-value-for-parameter
