@@ -19,6 +19,8 @@ class SQLInsertAction(BaseAction):
 
         insert_data = self.get_del_arg('data', kwargs_dict)
         insert_table = self.get_del_arg('table', kwargs_dict)
+        
+        print(insert_data)
 
         if not isinstance(insert_data, list):
             insert_data = [insert_data]

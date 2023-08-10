@@ -130,7 +130,7 @@ class BaseAction(Action):
 
         # Format the connection string
         # database_connection_string = URL(**connection)
-        database_connection_string = 'postgresql://makeen:db%4023*@mgtappsrv.makeen.ye:5432/makeen?sslmode=disable'
+        database_connection_string = 'postgresql+psycopg2://makeen:db%4023*@mgtappsrv.makeen.ye:5432/makeen?sslmode=disable'
         
         print(database_connection_string)
 
