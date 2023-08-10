@@ -34,6 +34,6 @@ class SQLInsertAction(BaseAction):
             conn.execute(sql_table.insert(),  # pylint: disable-msg=no-value-for-parameter
                         insert_data)
                         
-            conn.commit()
+            #conn.commit()
 
         return True
